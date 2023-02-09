@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>玩家成分调查表</title>
+    <script type="module" crossorigin src="./assets/index-86e611c4.js"></script>
+    <link rel="stylesheet" href="./assets/index-6b627fb2.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script>
+    function setRem() {
+      const width = document.documentElement.clientWidth
+      if (width < 750) {
+        const scale = width / 975;
+        document.documentElement.style.fontSize = scale * 16 + 'px';
+      } else {
+        document.documentElement.style.fontSize = '16px';
+      }
+    }
+    setRem();
+    window.onresize = setRem;
+    </script>
+  </body>
+</html>
