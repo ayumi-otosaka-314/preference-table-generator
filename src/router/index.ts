@@ -9,6 +9,7 @@ export const enum ROUTE_NAME_DEFINE {
   template = 'template',
   // 游戏生涯个人喜好表
   careerPersonalPreference = 'career-personal-preference',
+  railVehiclePreference = 'rail-vehicle-preference',
 }
 
 export const router = createRouter({
@@ -29,6 +30,11 @@ export const router = createRouter({
           path: 'template-cpp',
           name: ROUTE_NAME_DEFINE.careerPersonalPreference,
           component: () => import('@/views/home/template/CareerPersonalPreference.vue'),
+        },
+        {
+          path: 'template-rvp',
+          name: ROUTE_NAME_DEFINE.railVehiclePreference,
+          component: () => import('@/views/home/template/RailVehiclePreference.vue'),
         },
       ],
     },
